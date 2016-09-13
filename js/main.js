@@ -90,13 +90,13 @@ function endGame(){
 		output.style.color = "green";
 		output.innerHTML = "Hit! You saved the planet!" + "<br>"
 		+ "It only took you " + shotsMade + "missiles.";
-		alien.style.background = "url('../alien attack/assets/explosion.png')";
+		alien.style.background = "url('./assets/explosion.png')";
 	}
 	else{
 		output.style.color = "red";
 		output.innerHTML = "You lost!" + "<br>"
 		+ "The earth is doomed!";
-		cannon.style.background = "url('../alien attack/assets/explosion.png')";
+		cannon.style.background = "url('./assets/explosion.png')";
 		
 	}
 	disable();
@@ -108,7 +108,7 @@ function render(){
 	cannon.style.left = guessX + "px";
 	missile.style.left = guessX + "px";
  	missile.style.top = guessY + "px";
- 	missile.style.background = "url('../alien attack/assets/explosion.png')";
+ 	missile.style.background = "url('./assets/explosion.png')";
  	if(gameWon){
  		missile.style.display = "none";
   	}
